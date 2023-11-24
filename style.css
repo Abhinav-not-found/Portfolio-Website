@@ -8,8 +8,16 @@ font-family: "helvetica";
     height: 100vh;
     margin: auto;
     max-width: 85%;
+    position: relative;
     & .nav{
+        padding: 0 100px;
+        position: fixed;
         height: 10%;
+        width: 100%;
+        /* margin: auto; */
+        z-index: 1000;
+        top: 0;
+        left: 0;
         /* background-color: red; */
         display: flex;
         align-items: center;
@@ -17,12 +25,12 @@ font-family: "helvetica";
 
 
         /*?--------- glassmorphism--------- */
-        /* background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
+        background: rgba(255, 255, 255, 0.8);
+        /* box-shadow: 0 8px 32px 0 rgba(225, 225, 225, 0.37); */
+        backdrop-filter: blur( 12px );
+        -webkit-backdrop-filter: blur( 150px );
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+        border: 2px solid rgba(213, 213, 213, 0.18);
         /*?--------- glassmorphism--------- */
 
 
@@ -38,6 +46,20 @@ font-family: "helvetica";
             & a{
                 text-decoration: none;
                 color: black;
+                & span{
+                    padding: 10px 40px;
+                    border-radius: 20px;
+                    border: 1px solid black;
+                    font-size: 20px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                }
+                & span:hover{
+                    background-color: white;
+                    color: black;
+                }
             }
         }
     }
@@ -97,6 +119,97 @@ font-family: "helvetica";
                 }
                 & button:nth-child(2):hover{
                     border: 1px solid black;
+                }
+            }
+        }
+    }
+    & .project{
+        margin: 3% 0 4% 0;
+        width: 85% ;
+        margin: auto;
+        height: 100vh;
+        & h2{
+            color: #4898f6;
+            font-weight: 200;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        & h1{
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+        & .project-card{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            /* background-color: red; */
+            /* gap: 0  ; */
+            & .left{
+                margin-left: -10px;
+                & img{
+                    height: auto;
+                    width: 75%;
+                    border-radius: 10px;
+                }
+            }
+            & .right{
+                margin-left: -150px;
+                & div{
+                    display: flex;
+                    /* justify-content: start; */
+                    gap: 1em;
+                    font-size: 16px;
+                    width: 200px;
+                    margin-bottom: 3%;
+                    & p{
+                        padding: 6px 10px;
+                        border-radius: 6px;
+                        color: #2b88f5;
+                        background-color: #e5f1ff;
+                    }
+
+                }
+                & h1{
+                    /* margin-bottom: -10px; */
+                    /* text-wrap: nowrap; */
+                    font-weight: 550;
+                    font-size: 40px;
+                }
+                & p{
+                    /* width: 50%; */
+                    color: #666666;
+                    /* margin-bottom: 8%; */
+                }
+                & div{
+                    display: flex;
+                    gap: 2em;
+                    & button{
+                        margin-top: 2.5rem;
+                        width: 100%;
+                        text-wrap: nowrap;
+                        padding: 10px 40px;
+                        border-radius: 10px;
+                        border: 1px solid black;
+                        font-size: 20px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                    & button:nth-child(1){
+                        background-color: black;
+                        color: white;
+                        
+                    }
+                    & button:nth-child(1):hover{
+                        background-color: white;
+                        color: black;
+                    }
+                    & button:nth-child(2){
+                        background-color: transparent;
+                        border: 1px solid #dbdbdb;
+                    }
+                    & button:nth-child(2):hover{
+                        border: 1px solid black;
+                    }
                 }
             }
         }
@@ -165,6 +278,7 @@ font-family: "helvetica";
             & p{
                 margin: 5% 0 8% 0;
                 color: #666666;
+                line-height: 30px;
             }
             & .social{
                 font-size: 25px;
