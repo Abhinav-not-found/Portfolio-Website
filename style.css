@@ -113,7 +113,7 @@ html{
         height: 100vh;
         /* background-color: red; */
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin: auto;
         max-width: 85%;
@@ -121,7 +121,14 @@ html{
 
         background-image: radial-gradient(circle at 15% 65%,rgba(253,24,158,.2),hsla(0,0%,100%,0) 15%),radial-gradient(circle at 85% 25%,rgba(0,112,243,.2),hsla(0,0%,100%,0) 15%);
 
-
+        & .right{
+            & img{
+                height: auto;
+                width: 500%;
+                margin-left: -300px;
+                margin-right: 100px;
+            }
+        }
         & .left{
             margin: 10% 0;
             & h1{

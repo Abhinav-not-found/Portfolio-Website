@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -29,12 +29,14 @@
                 <h1>Front-end Web Developer</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut consectetur cum ratione, ipsa explicabo molestiae enim nesciunt atque perspiciatis laudantium repudiandae vero sit pariatur sapiente? Dolorum, repellat tempora. Illum, beatae?</p>
                 <div>
-                    <button>My Works <i class="ri-arrow-right-line"></i></button>
-                    <button>Resume <i class="ri-arrow-right-up-line"></i></button>
+                    <a href="#project">
+                        <button>My Works <i class="ri-arrow-right-line"></i></button>
+                    </a>
+                    <!-- <button>Resume <i class="ri-arrow-right-up-line"></i></button> -->
                 </div>
             </div>
             <div class="right">
-                <div class="box"></div>
+                <img src="./images/profile.png" alt="">
             </div>
         </div>
 
@@ -155,7 +157,7 @@
 
                     <input id="message" type="text" placeholder="Your Message" required  name="message" ><br>
 
-                    <button type="submit">Send Message <i class="ri-send-plane-2-fill"></i></button>
+                    <button id="send" type="submit">Send Message <i id="arrow" class="ri-send-plane-2-fill"></i></button>
 
                 </form>
             </div>
