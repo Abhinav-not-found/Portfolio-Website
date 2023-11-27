@@ -1,12 +1,8 @@
-@font-face {
-    font-size: 30px;
-}
 *{
 margin: 0;
 padding: 0;
 box-sizing:border-box;
 font-family: "helvetica";
-/* font-size: calc(100% - 10px); */
 }
 html{
     scroll-behavior: smooth;
@@ -202,7 +198,7 @@ html{
         }
         & .project-card{
             margin-bottom: 5%;
-        
+            font-size: calc(100% - 10px);
             display: flex;
             justify-content: space-between;
             align-items: start;
