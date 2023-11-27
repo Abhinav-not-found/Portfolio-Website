@@ -185,7 +185,8 @@ html{
         padding: 6% 0;
         width: 85% ;
         margin: auto;
-        height: 180vh;
+        height: 200vh;
+        /*! height: 150vh; */
         & h2{
             color: #4898f6;
             font-weight: 200;
@@ -208,7 +209,7 @@ html{
                 margin-left: -10px;
                 & img{
                     height: auto;
-                    width: 75%;
+                    width: 60%;
                     border-radius: 10px;
                 }
             }
