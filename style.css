@@ -210,11 +210,12 @@ html{
                 & img{
                     height: auto;
                     width: 60%;
+                    /* width: 75%; */
                     border-radius: 10px;
                 }
             }
             & .right{
-                margin-left: -150px;
+                margin-left: -250px;
                 & div{
                     /* display: flex; */
                     /* justify-content: start; */
@@ -389,7 +390,7 @@ html{
                     padding-bottom: 20%;
                 }
                 & button{
-                    /* background-color: red; */
+                    text-wrap: nowrap;
                     margin-left: 64%;
                     padding: 10px 40px;
                     font-size: 20px;
@@ -408,11 +409,6 @@ html{
             }
         }
     }
-}
-.box{
-    height: 20px;
-    width: 20px;
-    background-color: aqua;
 }
 .footer{
     display: flex;
