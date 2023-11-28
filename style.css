@@ -19,7 +19,10 @@ html{
     position: relative;
     color:#0087ca;
 }
-
+.hamburgur{
+    display: none;
+    font-size: 20px;
+}
 .wrapper{
     height: 100vh;
     margin: auto;
@@ -185,7 +188,7 @@ html{
         padding: 6% 0;
         width: 85% ;
         margin: auto;
-        height: 200vh;
+        height: 190vh;
         /*! height: 150vh; */
         & h2{
             color: #4898f6;
@@ -429,3 +432,37 @@ html{
         }
     }
 }
+
+/*!----------------- mediaQuery---------------------- */
+/* for mobile phones */
+@media screen and (min-width: 320px) 
+and (max-width: 480px) 
+ {
+    body{
+        max-width: 1vw;
+        overflow-x: hidden;
+        background-color: red;
+    }
+    .wrapper{
+        
+    }
+}
+
+/* for tablets  */
+/* @media screen and (min-width: 481px) 
+and (max-width: 768px) 
+ {
+    body{
+        background-color: red;
+    }
+} */
+
+/* for desktops */
+/* @media screen and (min-width: 769px) 
+and (max-width: 1920px) 
+ {
+    body{
+        background-color: red;
+    }
+} */
+
