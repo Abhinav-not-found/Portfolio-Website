@@ -76,7 +76,7 @@ html{
                     color: white;
                 }
                 & span:hover{
-                    background-color: white;
+                    background-color: transparent;
                     color: black;
                 }
                 
@@ -146,7 +146,7 @@ html{
             }
             & p{
                 margin: 2% 0 5% 0;
-                width: 50%;
+                width: 60%;
                 font-size: 15px;
                 line-height: 150%;
                 color: #666666;
@@ -155,7 +155,7 @@ html{
                 display: flex;
                 gap: 2em;
                 & button{
-                    padding: 6px 40px;
+                    padding: 8px 40px;
                     border-radius: 20px;
                     border: 1px solid black;
                     font-size: 15px;
@@ -171,16 +171,20 @@ html{
                     
                 }
                 & button:nth-child(1):hover{
-                    background-color: white;
+                    background-color: transparent;
                     color: black;
                 }
-                & button:nth-child(2){
-                    background-color: transparent;
-                    border: 1px solid #dbdbdb;
+                & a:nth-child(2){
+                    & button:nth-child(1){
+                        background-color: transparent;
+                        border: 1px solid #dbdbdb;
+                        color: black;
+                    }
+                    & button:nth-child(1):hover{
+                        border: 1px solid black;
+                    }
                 }
-                & button:nth-child(2):hover{
-                    border: 1px solid black;
-                }
+                
             }
         }
     }
@@ -229,7 +233,7 @@ html{
                     width: 300px;
                     margin-bottom: 3%;
                     & p{
-                        font-size: 11px;
+                        font-size: 13px;
                         padding: 6px 10px;
                         border-radius: 6px;
                         color: #2b88f5;
@@ -240,7 +244,7 @@ html{
                 & h1{
                     /* margin-bottom: -10px; */
                     /* text-wrap: nowrap; */
-                    margin-top: -10px;
+                    margin-top: -8px;
                     font-weight: 550;
                     font-size: 35px;
                 }
@@ -256,7 +260,7 @@ html{
                     gap: 2em;
                     & a{
                         & button{
-                        margin-top: 1.5rem;
+                        margin-top: 1.8rem;
                         width: 100%;
                         text-wrap: nowrap;
                         padding: 8px 35px;
@@ -305,7 +309,7 @@ html{
                 position: relative;
                 margin-bottom: 5%;
                 & input{
-                    font-size: 18px;
+                    font-size: 15px;
                     color: #666666;
                     width: 100%;
                     margin: 1% 0 3% 0;
@@ -342,12 +346,12 @@ html{
                     display: none;  
                     position: absolute;
                     cursor: pointer;
-                    padding: 6px;
+                    padding: 3px 6px;
                     border-radius: 7px;
-                    top: -9%;
-                    left: 76%;
+                    top: -20%;
+                    left: 74%;
                     color: white;
-                    font-size: 12px;
+                    font-size: 10px;
                     text-wrap: nowrap;
                     background-color: black;
                 }
@@ -449,9 +453,9 @@ and (max-width: 480px)
         overflow-x: hidden;
         background-color: red;
     }
-    .wrapper{
+    /* .wrapper{
         
-    }
+    } */
 }
 
 /* for tablets  */
