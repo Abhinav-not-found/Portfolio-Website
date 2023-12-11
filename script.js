@@ -51,3 +51,57 @@ for (var i = 0; i < btns.length; i++) {
   }
 
 
+var tl = gsap.timeline();
+tl.to("#one",{
+    y:-20,
+    opacity:0,
+    duration:0.5,
+    delay:1,
+    scale:0.5,
+})
+tl.from("#two",{
+    opacity:0,
+    y:20,
+    duration:0.5,
+    delay:0,
+    scale:0.5,
+})
+tl.to("#two",{
+    y:-20,
+    opacity:0,
+    duration:1,
+    delay:1,
+})
+tl.to("#loader",{
+    opacity:0,
+    duration:1,
+    delay:0,
+     onComplete: function() {
+        document.getElementById("loader").style.display = "none";
+    }
+})
+tl.from("#logo",{
+    y:20,
+    opacity:0,
+    duration:0.5,
+    delay:-1,
+})
+tl.from(".btn",{
+    y:-20,
+    opacity:0,
+    duration:0.5,
+    delay:-0.5,
+    stagger:0.2,
+})
+tl.from("#e1",{
+    x:-50,
+    opacity:0,
+    duration:0.5,
+    delay:-0,
+    stagger:0.1,
+})
+tl.from("#e2",{
+    x:50,
+    opacity:0,
+    duration:0.5,
+})
