@@ -188,6 +188,24 @@ html{
             }
         }
     }
+
+    & .about{
+        height: 100vh;
+        /* background-color: red; */
+        border-top: 1px solid #e0e0e0;
+        padding: 6% 0;
+        width: 85% ;
+        margin: auto;
+        height: 150vh;
+
+        & .left{
+            & h2{
+                color: #4898f6;
+                font-weight: 200;
+                font-size: 15px;
+            }
+        }
+    }
     & .project{
         border-top: 1px solid #e0e0e0;
         padding: 6% 0;
